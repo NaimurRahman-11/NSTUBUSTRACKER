@@ -34,7 +34,7 @@ include('header.php');
                                 <h5 class="card-title">Campus - Chowrasta</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                                <a href="Gcampustochowrasta.php" class="btn btn-primary">See Schedule</a>
+                                <a href="GSourceToDestination.php?tableName=campustochowrasta" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ include('header.php');
                                 <h5 class="card-title">Chowrasta - Campus</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="GSourceToDestination.php?tableName=chowrastatocampus" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -56,7 +56,18 @@ include('header.php');
                                 <h5 class="card-title">Campus - Shubarnochar</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="GSourceToDestination.php?tableName=campustoshubarnochar" class="btn btn-primary">See Schedule</a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3"><br>
+                            <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Shubarnochar - Campus</h5><br>
+                                <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
+                                <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                                <a href="GSourceToDestination.php?tableName=shubarnochartocampus" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>

@@ -12,10 +12,14 @@
 <body>
 
 <!-- Footer Section Starts Here -->
-<footer class="footer bg-secondary pt-5 pb-4 text-center">
+
+<div class="footer bg-secondary pt-5 pb-4 text-center">
+
     <p>Copyright &copy; 2022 by Noakhali Science and Technology University.</p>
      
-  </footer>
+
+</div>
+
   <!-- Footer Section Ends Here -->
 	
 

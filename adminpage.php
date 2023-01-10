@@ -82,7 +82,7 @@
                                 <h5 class="card-title">Chowrasta - Campus</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="SourceToDestination.php?tableName=chowrastatocampus" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -93,7 +93,19 @@
                                 <h5 class="card-title">Campus - Shubarnochar</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="SourceToDestination.php?tableName=campustoshubarnochar" class="btn btn-primary">See Schedule</a>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-3"><br>
+                            <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Shubarnochar - Campus</h5><br>
+                                <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
+                                
+                                <a href="SourceToDestination.php?tableName=shubarnochartocampus" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
