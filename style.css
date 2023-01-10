@@ -1,76 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap');
-*{
-    font-family:'Noto Sans Bengali', sans-serif;
+
+* {
+    font-family: 'Noto Sans Bengali', sans-serif;
 }
 
 
-#myId{
-    font-size: large;
+
+.mynav a:hover {
+    color: white;
 }
 
-.mynav a{
-    margin-right: 20px;
-    
+.mynav li {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    padding: 13px;
+
+
 }
 
 
-.mynav a:hover{
-    color: blue;
-    text-decoration: underline;
+.mynav li:hover {
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 900;
+
 }
 
-.navbar-brand{
-   margin-left: 20px;
+
+.navbar-brand {
+    margin-left: 20px;
 }
 
 /* .sectionTwo{
     background-color: #dfe6e9;
 } */
 
-.card-title{
+.card-title {
     font-weight: bolder;
     text-align: center;
 }
 
-.btn{
-  margin-left: 10px;
-  width: 140px;
+.btn {
+    margin-left: 10px;
+    width: 140px;
 }
 
-#button1{
-    margin-left: 50px;
-}
-
-#button2{
-    margin-left: 50px;
-}
-#button3{
-    margin-left: 50px;
-}
-#button4{
+#button1 {
     margin-left: 50px;
 }
 
-.card{
+#button2 {
+    margin-left: 50px;
+}
+
+#button3 {
+    margin-left: 50px;
+}
+
+#button4 {
+    margin-left: 50px;
+}
+
+.card {
     transition: .4s;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.footer{
+.footer {
     background-color: #34495e;
     color: white;
 }
 
-.carousel-item img{
+.carousel-item img {
+    /* height: 500px; */
     height: 500px;
+    width: 100px;
 }
 
-
-
-
-
-
+.carousel-item {
+    height: 500px;
+}
