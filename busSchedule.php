@@ -12,7 +12,7 @@ include('header.php');
                                 <h5 class="card-title">Campus - Maijdee</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                                <a href="Gcampustomaijdee.php" class="btn btn-primary">See Schedule</a>
+                                <a href="GSourceToDestination.php?tableName=campustomaijdee" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@ include('header.php');
                                 <h5 class="card-title">Maijdee - Campus</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="GSourceToDestination.php?tableName=maijdeetocampus" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ include('header.php');
                                 <h5 class="card-title">Campus - Chowrasta</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="Gcampustochowrasta.php" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>

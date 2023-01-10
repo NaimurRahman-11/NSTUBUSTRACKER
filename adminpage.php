@@ -49,7 +49,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Campus - Maijdee</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
-                                <a href="campustomaijdee.php" class="btn btn-primary">See Schedule</a>
+                                <a href="SourceToDestination.php?tableName=campustomaijdee" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                                 <h5 class="card-title">Maijdee - Campus</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="SourceToDestination.php?tableName=maijdeetocampus" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                                 <h5 class="card-title">Campus - Chowrasta</h5><br>
                                 <i class="fa-solid fa-bus-simple fa-5x center"></i><br><br>
                                 
-                                <a href="#" class="btn btn-primary">See Schedule</a>
+                                <a href="SourceToDestination.php?tableName=campustochowrasta" class="btn btn-primary">See Schedule</a>
                             </div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
 
                       
                       
-        <form action="addSchedule.php" method="post">
+        <form action="addSchedule.php" method="POST">
             
 
             <div>
@@ -139,18 +139,35 @@
             </div>
 
             <div>
+            <label for="Source">Choose Source Place:</label><br>
+
+                    <select name="Source" id="Source">
+                    <option value="None" selected>None</option>
+                      <option value="Campus">Campus</option>
+                      <option value="Maijdee">Maijdee</option>
+                      <option value="Chowrasta">Chowrasta</option>
+                      <option value="Shubarnochar">Shubarnochar</option>
+                    </select>
+            </div>
+
+            <div>
+            <label for="Destination">Choose Destinaton Place:</label><br>
+
+                    <select name="D" id="Destination">
+                    <option value="None" selected>None</option>
+                      <option value="Campus">Campus</option>
+                      <option value="Maijdee">Maijdee</option>
+                      <option value="Chowrasta">Chowrasta</option>
+                      <option value="Shubarnochar">Shubarnochar</option>
+                    </select>
+            </div>
+
+            <div>
             <input type="submit" class="btn btn-success w-30" value="Add" name="add" id="add">
             </div>
 
-
-
             
         </form>
-
-
-        
-
-
                       
                     </div>
 

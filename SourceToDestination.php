@@ -91,9 +91,8 @@
 <?php
      include('DatabaseConnection.php');
     
-  
-    
-    $sql= "select * from campustomaijdee";
+    $sql= "select * from ".$_GET['tableName'];
+
     $fetchfile= mysqli_query($conn,$sql);
 
     $sn=1;
@@ -127,7 +126,7 @@
                     <td><?php echo $Time; ?></td>
                     <td>
                       
-                      <a href="DeleteSchedule.php?id=<?php echo $id; ?>" class="delete-button" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash"></i></a>
+                      <a href="DeleteSchedule.php?id=<?php echo $id; ?>&tableName=<?php echo $_GET['tableName']; ?>" class="delete-button" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash"></i></a>
                       <a href="UpdateFileLocation.php?fileId=<?php echo $id; ?>" class="update-button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="fa-solid fa-pen-to-square"></i></a>
                       
 
@@ -156,5 +155,5 @@
 
 
     
-
-    
+</body>
+</html>

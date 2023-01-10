@@ -2,12 +2,10 @@
 
 include('DatabaseConnection.php');
 
+
 $id = $_GET['id'];
 
-echo $id;
-
-
-$sql = "DELETE FROM campustomaijdee WHERE `id`=$id";
+$sql = "DELETE FROM ".$_GET['tableName']." WHERE `id`=$id";
 
 
 if(mysqli_query($conn, $sql)){
