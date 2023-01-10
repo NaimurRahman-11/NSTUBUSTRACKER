@@ -1,4 +1,12 @@
 <?php
+session_start();
+if(!$_SESSION['loggedIn']){
+  header('location:admin.php');
+}
+
+?>
+
+<?php
 include('header.php');
 ?>
 

@@ -1,4 +1,12 @@
 <?php
+session_start();
+if(!$_SESSION['loggedIn']){
+  header('location:admin.php');
+}
+
+?>
+
+<?php
 
 include('DatabaseConnection.php');
 
@@ -27,8 +35,8 @@ if($Source=='Campus' && $Destination=='Maijdee'){
         
     }
     else {
-      echo '<script>alert("failed to add schedule!");
-      // location="ManageFiles.php";
+      echo '<script>alert("Failed to add schedule!");
+      location="adminpage.php";
       </script>';
     }
 }
@@ -46,32 +54,90 @@ if($Source=='Maijdee' && $Destination=='Campus'){
     }
     else {
       echo '<script>alert("failed to add schedule!");
-      // location="ManageFiles.php";
+      location="adminpage.php";
+      </script>';
+    }
+}
+
+
+if($Source=='Campus' && $Destination=='Chowrasta'){
+  $sql= "insert into campustochowrasta (`BusNumber`,`BusName`,`Time`)
+  values('$BusNumber','$BusName','$Time')";
+  
+  if(mysqli_query($conn, $sql)){
+         
+      echo '<script>alert("Schedule is added successfully!");
+       location="adminpage.php";
+        </script>';
+        
+    }
+    else {
+      echo '<script>alert("failed to add schedule!");
+      location="adminpage.php";
+      </script>';
+    }
+}
+
+if($Source=='Chowrasta' && $Destination=='Campus'){
+  $sql= "insert into chowrastatocampus (`BusNumber`,`BusName`,`Time`)
+  values('$BusNumber','$BusName','$Time')";
+  
+  if(mysqli_query($conn, $sql)){
+         
+      echo '<script>alert("Schedule is added successfully!");
+       location="adminpage.php";
+        </script>';
+        
+    }
+    else {
+      echo '<script>alert("failed to add schedule!");
+      location="adminpage.php";
+      </script>';
+    }
+}
+
+if($Source=='Campus' && $Destination=='Shubarnochar'){
+  $sql= "insert into campustoshubarnochar (`BusNumber`,`BusName`,`Time`)
+  values('$BusNumber','$BusName','$Time')";
+  
+  if(mysqli_query($conn, $sql)){
+         
+      echo '<script>alert("Schedule is added successfully!");
+       location="adminpage.php";
+        </script>';
+        
+    }
+    else {
+      echo '<script>alert("failed to add schedule!");
+      location="adminpage.php";
+      </script>';
+    }
+}
+
+if($Source=='Shubarnochar' && $Destination=='Campus'){
+  $sql= "insert into shubarnochartocampus (`BusNumber`,`BusName`,`Time`)
+  values('$BusNumber','$BusName','$Time')";
+  
+  if(mysqli_query($conn, $sql)){
+         
+      echo '<script>alert("Schedule is added successfully!");
+       location="adminpage.php";
+        </script>';
+        
+    }
+    else {
+      echo '<script>alert("failed to add schedule!");
+      location="adminpage.php";
       </script>';
     }
 }
 
 else {
-  echo '<script>alert("failed to add schedule!");
-  // location="ManageFiles.php";
+  echo '<script>alert("Failed to add schedule!");
+  location="adminpage.php";
   </script>';
 }
 
 
-// $sql= "insert into campustomaijdee (`BusNumber`,`BusName`,`Time`)
-// values('$BusNumber','$BusName','$Time')";
-
-// if(mysqli_query($conn, $sql)){
-       
-//     echo '<script>alert("Schedule is added successfully!");
-//      location="adminpage.php";
-//       </script>';
-      
-//   }
-//   else {
-//     echo '<script>alert("failed to add schedule!");
-//     // location="ManageFiles.php";
-//     </script>';
-//   }
 
 ?>

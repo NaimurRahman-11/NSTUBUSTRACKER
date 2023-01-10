@@ -19,25 +19,22 @@
     <div class="login">
         <h1 class="text-center"><span class="auto-type"></span></h1>
 
-        <form class="needs-validation" action="">
+        <form class="needs-validation" action="test.php" method="POST">
             <div class="form-group was-validated">
-                <label class="form-label" for="email">Email Address:</label>
-                <input class="form-control" type="email" id="email" required>
-                <div class="invalid-feedback">Please enter your email</div>
+                <label class="form-label" for="userName">Username:</label>
+                <input class="form-control" type="username" id="username" name="username" required>
+                <div class="invalid-feedback">Please enter your username</div>
             </div>
 
             <div class="form-group was-validated">
                 <label class="form-label" for="password">Password:</label>
-                <input class="form-control" type="password" id="password" required>
+                <input class="form-control" type="password" id="password" name="password" required>
                 <div class="invalid-feedback">Please enter your password</div>
             </div>
 
-            <div class="form-group form-check">
-                <input class="form-check-input" type="checkbox" id="check">
-                <label class="form-check-label" for="check">Remember me</label> 
-            </div>
 
-            <a href="adminpage.php"><input class="btn btn-success w-100" type="button" value="Log In"></a>
+
+            <a href="#"><input class="btn btn-success w-100" type="submit" name="submit" value="Log In"></a>
 
             
         </form>
@@ -53,3 +50,4 @@
     </script>
 </body>
 </html>
+

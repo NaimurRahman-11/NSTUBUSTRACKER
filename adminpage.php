@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['loggedIn'])){
+  header('location:admin.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +31,7 @@
   <div class="header">
     <h1>Admin's Dashboard</h1> 
     <a href="#"><p class="home"><i class="fa-solid fa-house-user"></i> Home</p> </a> 
-    <a href="admin.php"><p class="log-out"><i class="fa-solid fa-right-from-bracket"></i> log out</p> </a>
+    <a href="logout.php"><p class="log-out"><i class="fa-solid fa-right-from-bracket"></i> log out</p> </a>
   </div>
 
 

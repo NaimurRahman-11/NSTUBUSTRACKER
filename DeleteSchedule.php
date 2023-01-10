@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(!$_SESSION['loggedIn']){
+  header('location:admin.php');
+}
+
+?>
+
+
+<?php
 
 include('DatabaseConnection.php');
 
@@ -10,10 +19,17 @@ $sql = "DELETE FROM ".$_GET['tableName']." WHERE `id`=$id";
 
 if(mysqli_query($conn, $sql)){
        
-  echo '<script>alert("Schedule deleted!");
-   location="adminpage.php";
-    </script>';
+  
+ ?>
+
     
+    <script>
+     alert("Deleted Successfully!");
+     location="SourceToDestination.php?tableName=<?php echo $_GET['tableName'];?>"
+    </script>
+
+    
+<?php    
 }
 else {
   echo '<script>alert("failed to delete schedule!");
@@ -22,3 +38,4 @@ else {
 }
 
 ?>
+

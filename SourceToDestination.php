@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!$_SESSION['loggedIn']){
+  header('location:admin.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
