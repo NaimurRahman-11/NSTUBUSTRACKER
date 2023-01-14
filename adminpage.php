@@ -142,7 +142,7 @@ if(!isset($_SESSION['loggedIn'])){
 
             <div>
                 <label class="form-label" for="description">Description:</label><br>
-                <textarea id="" name="description" rows="4" cols="40"></textarea>
+                <textarea id="textArea" name="description" rows="4" cols="40"></textarea>
                 
             </div>
 

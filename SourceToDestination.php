@@ -74,6 +74,7 @@ if(!$_SESSION['loggedIn']){
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    border: none;
 }
 
 .update-button:hover{
@@ -128,20 +129,24 @@ if(!$_SESSION['loggedIn']){
               
   ?>
                 <tr>
+                  <form action="UpdateSchedule.php" method="POST">
+                  <input type="hidden" value="<?php echo $_GET['tableName']; ?>" name="tableName">
                     <td><?php echo $sn++; ?></td>
-                    <td><?php echo $Bus_No; ?></td>
-                    <td><?php echo $Bus_Name; ?> </td>
-                    <td><?php echo $Time; ?></td>
                     <td>
-                      
-                      <a href="DeleteSchedule.php?id=<?php echo $id; ?>&tableName=<?php echo $_GET['tableName']; ?>" class="delete-button" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash"></i></a>
-                      <a href="UpdateFileLocation.php?fileId=<?php echo $id; ?>" class="update-button" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="fa-solid fa-pen-to-square"></i></a>
-                      
-
-
-                      
-      
+                      <input class="form-control" type="text" value="<?php echo $Bus_No; ?>" name="BusNumber" required>
                     </td>
+                    <td>
+                      <input class="form-control" type="text" value="<?php echo $Bus_Name; ?>" name="BusName" required>
+                    </td>
+                    <td>
+                      <input class="form-control" type="text" value="<?php echo $Time; ?>" name="Time" required>
+                    </td>
+                    <td>
+                      <a href="DeleteSchedule.php?id=<?php echo $id; ?>&tableName=<?php echo $_GET['tableName']; ?>" class="delete-button" data-toggle="modal" data-target="#exampleModal"><i class="fa-solid fa-trash"></i></a>
+
+                      <button class="update-button" name="id" type="submit" value="<?php echo $row['id']?>"> <i class="fa-solid fa-pen-to-square"></i></button>
+                    </td>
+                  </form>
                 </tr>
       
   <?php   
@@ -160,6 +165,50 @@ if(!$_SESSION['loggedIn']){
     </table>
 
     <!-- Button trigger modal -->
+
+    <form action="UpdateSchedule.php" method="post">
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <!-- <div class="mb-3">
+                <label for="YourID" class="col-form-label">File ID:</label>
+                <input type="text" class="form-control" id="FileName" name="fileID">
+              </div> -->
+              <input type="hidden" name="id" id="id">
+            
+            
+              <div class="mb-3">
+                <label for="YourID" class="col-form-label">Enter Bus Number:</label>
+                <input type="text" class="form-control" id="FileLocation" name="BusNumber" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="YourID" class="col-form-label">Enter Bus Name:</label>
+                <input type="text" class="form-control" id="FileLocation" name="BusName" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="YourID" class="col-form-label">Enter Time:</label>
+                <input type="text" class="form-control" id="FileLocation" name="Time" required>
+              </div>
+  
+  
+  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" value="<?php echo $_GET['tableName']?>" name="updateBus">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   </form>
 
 
     
