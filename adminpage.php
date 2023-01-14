@@ -37,6 +37,7 @@ if(!isset($_SESSION['loggedIn'])){
 
 
               <!-- Bootstrap dynamic toggolable pills starts from here -->
+
               <br>
               <div class="mb-3">
                 <div class="toggolable">
@@ -129,7 +130,28 @@ if(!isset($_SESSION['loggedIn'])){
 
 
                     <div id="notice" class="tab-pane fade">
-                      <!-- Personal Table will be added here -->
+                    
+                    <form action="mail.php" method="POST">
+            
+
+            <div>
+                <label class="form-label" for="title">Notice Title:</label>
+                <input class="form-control" type="text" id="BusNumber" name="title" required>
+                
+            </div>
+
+            <div>
+                <label class="form-label" for="description">Description:</label><br>
+                <textarea id="" name="description" rows="4" cols="40"></textarea>
+                
+            </div>
+
+            <div>
+            <input type="submit" class="btn btn-success w-30" value="Notify" name="add" id="add">
+            </div>
+
+            
+        </form>
                       
                     </div>
 

@@ -35,6 +35,15 @@ include('header.php');
 
 		  <!-- Carousel Section Ends Here -->
 
+		  <form action="addSubscribers.php" method="post">
+		  <div class="subscribe-content" style="background-color: skyblue; padding: 30px 0px 40px 0px;" align="center">
+            <h3>Subscribe</h3>
+            <input style="border-radius: 5px;" type="text" placeholder="Enter your email" name="email">
+            <button type="submit" style="border-radius: 5px;"><i class="fa-solid fa-bell"></i> Subscribe</button>
+        </div>
+		  </form>
+		  
+
 
 	<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -50,6 +59,16 @@ include('header.php');
 		loop: true 
 	})
 </script>
+
+
+
+        
+
+
+
+
+
+
 </body>
 
 <?php
