@@ -1,14 +1,15 @@
 <?php
 include('header.php');
-?>
+
+?> 
+
 
 	  <div class="sectionOne p-3 mb-2 text-black">
 
 		<br><h1 align="center"><span class="auto-type"></span></h1><br>
 		
 	  </div>
-
-
+	 
 	  <!-- Carousel Section Starts Here -->
 
 	  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -31,21 +32,25 @@ include('header.php');
 			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			  <span class="visually-hidden">Next</span>
 			</button>
-		  </div>
+		</div>
+
 
 		  <!-- Carousel Section Ends Here -->
+		  <!-- style="background-color: skyblue; padding: 30px 0px 40px 0px;" -->
 
-		  <form action="addSubscribers.php" method="post">
-		  <div class="subscribe-content" style="background-color: skyblue; padding: 30px 0px 40px 0px;" align="center">
-            <h3>Subscribe</h3>
-            <input style="border-radius: 5px;" type="text" placeholder="Enter your email" name="email">
-            <button type="submit" style="border-radius: 5px;"><i class="fa-solid fa-bell"></i> Subscribe</button>
+		  <form id="subscribe" action="addSubscribers.php" method="post">
+		  <div class="subscribe-content" align="center">
+            <h3>Subscribe To Get Schedule Updates!</h3><br>
+            <input style="border-radius: 5px;" type="email" placeholder="Enter your email" name="email" id="Semail" required> <br><br>
+            <button id="Sbutton" type="submit" style="border-radius: 5px;"><i class="fa-solid fa-bell"></i> Subscribe</button>
         </div>
 		  </form>
 		  
 
 
-	<!-- JavaScript Bundle with Popper -->
+	
+
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -60,22 +65,7 @@ include('header.php');
 	})
 </script>
 
-
-
-        
-
-
-
-
-
-
-</body>
-
 <?php
-
 include('footer.php');
-
 ?>
-</html>
-
 

@@ -80,10 +80,30 @@
 
 .carousel-item img {
     /* height: 500px; */
-    height: 500px;
+    height: 900px;
     width: 100px;
 }
 
 .carousel-item {
-    height: 500px;
+    height: 900px;
+}
+
+#subscribe {
+    background-color: aqua;
+    padding: 100px;
+
+}
+
+#Sbutton {
+    border: none;
+    padding: 20px;
+}
+
+#Semail {
+    border: none;
+    padding: 20px;
+}
+
+.tik {
+    background-color: black;
 }
