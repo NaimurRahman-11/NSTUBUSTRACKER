@@ -34,9 +34,7 @@
 			  <li class="nav-item">
 				<a class="nav-link" href="#">বাস লোকেশন</a>
 			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">নোটিশ</a>
-			  </li>
+			 
 			</ul>
 			
 		  </div>
