@@ -17,7 +17,7 @@ include('header.php');
 
 </div>
     <div id="demo" style="width: 600px; height: 400px;"></div>
-</div>
+</div><br><br>
     
 
     <script src="https://maps.google.com/maps/api/js?sensor=false"> </script>
