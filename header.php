@@ -32,7 +32,7 @@
 				<a class="nav-link" href="busSchedule.php">বাস শিডিউল</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#">বাস লোকেশন</a>
+				<a class="nav-link" href="map.php">বাস লোকেশন</a>
 			  </li>
 			 
 			</ul>
